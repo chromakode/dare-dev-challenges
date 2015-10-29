@@ -3,7 +3,96 @@
   <head>
     <title>Challenge 2</title>
     <link rel="stylesheet" href="./styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+    <style>
+
+body {
+  background: url(./assets/background.png);
+  margin: 90px;
+}
+
+#taunt {
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  z-index: 999;
+}
+
+#taunt img {
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#construction {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 999;
+}
+
+#construction img {
+  width: 300px;
+}
+
+@keyframes spin {
+    from { 
+        transform: rotate(0deg);
+    } to { 
+        transform: rotate(360deg);
+    }
+}
+
+#frame {
+  text-align: center;
+  position: relative;
+  width: 857px;
+  height: 852px;
+  background: url(./assets/michael.png) no-repeat;
+  background-size: contain;
+  color: white;
+}
+
+#logo {
+  margin-top: -25px;
+}
+
+#spacer {
+  height: 690px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Righteous', sans-serif;
+  margin: 0;
+}
+
+.gold {
+  color: gold;
+}
+
+.silver {
+  color: silver;
+}
+
+    </style>
   </head>
   <body>
+<div id="taunt">
+<img src="http://i.imgur.com/Qu07P9v.gif" alt="" />
+</div>
+<div id="construction">
+  <img src="http://vignette3.wikia.nocookie.net/thebooksofkyl/images/b/b3/Website_under_construction.gif/revision/latest?cb=20130225022514"/>
+</div>
+
+<div id="frame">
+  <img id="logo" src="./assets/logo_sega.png"/>
+  <div id="spacer"></div>
+  <h1 class="gold">DUKE</h1>
+  <h1 class="gold">SILVER'S</h1>
+  <h1 class="silver">TRIO™</h1>
+</div>
+
   </body>
 </html>
